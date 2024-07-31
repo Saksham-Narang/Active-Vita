@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveVita Setup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="goBack()">&larr;</button>
+            <h1>Where are you from?</h1>
+            <button class="skip-button" onclick="skip()">SKIP</button>
+        </header>
+        <form id="formStep">
+            <input type="text" id="location" name="location" placeholder="Dehradun" required>
+            <label>Which language do you prefer to speak in?</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" id="hindi" name="language" value="Hindi">
+                    Hindi (हिंदी)
+                </label>
+                <label>
+                    <input type="radio" id="english" name="language" value="English">
+                    English
+                </label>
+                <label>
+                    <input type="radio" id="tamil" name="language" value="Tamil">
+                    Tamil (தமிழ்)
+                </label>
+                <label>
+                    <input type="radio" id="telugu" name="language" value="Telugu">
+                    Telugu (తెలుగు)
+                </label>
+                <label>
+                    <input type="radio" id="kannada" name="language" value="Kannada">
+                    Kannada (ಕನ್ನಡ)
+                </label>
+                <label>
+                    <input type="radio" id="malayalam" name="language" value="Malayalam">
+                    Malayalam (മലയാളം)
+                </label>
+                <label>
+                    <input type="radio" id="gujarati" name="language" value="Gujarati">
+                    Gujarati (ગુજરાતી)
+                </label>
+                <label>
+                    <input type="radio" id="bengali" name="language" value="Bengali">
+                    Bengali (বাংলা)
+                </label>
+                <label>
+                    <input type="radio" id="marathi" name="language" value="Marathi">
+                    Marathi (मराठी)
+                </label>
+                <label>
+                    <input type="radio" id="other" name="language" value="Other">
+                    Other
+                </label>
+            </div>
+            <button type="button" onclick="nextStep()">NEXT</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

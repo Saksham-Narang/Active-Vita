@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Any medical condition we should be aware of?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="goBack()">&larr;</button>
+            <h1>Any medical condition we should be aware of?</h1>
+            <button class="skip-button" onclick="skip()">SKIP</button>
+        </header>
+        <form id="formStep">
+            <input type="text" id="medicalCondition" name="medicalCondition" placeholder="Enter your medical condition" required>
+            <button type="button" onclick="submitForm()">SUBMIT</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
