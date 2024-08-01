@@ -5,39 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <link rel="stylesheet" href="settings.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <button class="back-button">&larr;</button>
-            <h1>Settings</h1>
-        </header>
-        <section class="settings-section">
-            <h2>App</h2>
-            <ul>
-                <li><a href="communication.html">Communication Settings</a></li>
-                <li><a href="units.html">Units & Measures</a></li>
-                <li><a href="refresh.html">Refresh</a></li>
-            </ul>
-        </section>
-        <section class="settings-section">
-            <h2>About</h2>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="version.html">App Version</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </section>
-        <section class="settings-section">
-            <h2>Account</h2>
-            <ul>
-                <li><a href="help.html">Help</a></li>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="logout.html">Log Out</a></li>
-            </ul>
-        </section>
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <div class="settings-sections">
+            <div class="section">
+                <h2>App</h2>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> Communication Settings</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><i class="fas fa-user-shield"></i> Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Account</h2>
+                <ul>
+                    <li><i class="fas fa-question-circle"></i> Help</li>
+                    <li><i class="fas fa-user-circle"></i> Account</li>
+                    <li><i class="fas fa-sign-out-alt"></i> Log Out</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
